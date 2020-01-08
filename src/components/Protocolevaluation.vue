@@ -1104,6 +1104,9 @@
                     label="R"
                   ></v-select>
                 </v-col>
+                <v-col cols="12" sm="6" md="2">
+                   <v-text-field  v-model="baselines.brt" class="my-n5" :disabled="true" ></v-text-field>
+                </v-col>
               </v-row>
               <v-row>
                 <v-col cols="12" sm="6" md="2">
@@ -1120,6 +1123,9 @@
                     :items="items"
                     label="R"
                   ></v-select>
+                </v-col>
+                   <v-col cols="12" sm="6" md="2">
+                   <v-text-field  v-model="baselines.lart" class="my-n5" :disabled="true" ></v-text-field>
                 </v-col>
               </v-row>
               <v-row>
@@ -1138,14 +1144,11 @@
                     label="R"
                   ></v-select>
                 </v-col>
+                  <v-col cols="12" sm="6" md="2">
+                   <v-text-field  v-model="baselines.bcrt" class="my-n5" :disabled="true" ></v-text-field>
+                </v-col>
               </v-row>
-              <v-row>
-               <v-textarea class="mb-n10" v-model="baselines.bcrComment"
-                  outlined
-                  name="Bemerkungen"
-                 label="Bemerkungen"
-                  ></v-textarea>
-              </v-row>
+             
             </v-container>
               </v-expansion-panel-content>
             </v-expansion-panel>
@@ -2159,6 +2162,9 @@
                     label="R"
                   ></v-select>
                 </v-col>
+                 <v-col cols="12" sm="6" md="2">
+                   <v-text-field  v-model="closing.brt" class="my-n5" ></v-text-field>
+                </v-col>
               </v-row>
               <v-row>
                 <v-col cols="12" sm="6" md="2">
@@ -2170,11 +2176,15 @@
                     label="L"
                   ></v-select>
                  </v-col>
+                 
                 <v-col cols="12" sm="6" md="2">
                   <v-select v-model="closing.larR" class="my-n5" :disabled="true" 
                     :items="items"
                     label="R"
                   ></v-select>
+                </v-col>
+                <v-col cols="12" sm="6" md="2">
+                   <v-text-field  v-model="closing.lart" class="my-n5" ></v-text-field>
                 </v-col>
               </v-row>
               <v-row>
@@ -2193,14 +2203,11 @@
                     label="R"
                   ></v-select>
                 </v-col>
+                  <v-col cols="12" sm="6" md="2">
+                   <v-text-field  v-model="closing.bcrt" class="my-n5" ></v-text-field>
+                </v-col>
               </v-row>
-              <v-row>
-               <v-textarea class="mb-n10" v-model="closing.bcrComment"
-                  outlined
-                  name="Bemerkungen"
-                 label="Bemerkungen"
-                  ></v-textarea>
-              </v-row>
+            
             </v-container>
               </v-expansion-panel-content>
             </v-expansion-panel>
@@ -2546,7 +2553,9 @@ study: '',
     larR:'',
     bcrL:'',
     bcrR:'',
-    bcrComment: '',
+   brt:'',
+    lart: '',
+    bcrt: '',
 
   },
 
@@ -2757,10 +2766,13 @@ study: '',
 
     brR:'',
     brL:'',
+     brt:'',
     larL:'',
     larR:'',
+    lart: '',
     bcrL:'',
     bcrR:'',
+     bcrt: '',
     bcrComment: '',
 
   },
@@ -3024,10 +3036,11 @@ image: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAA1+E
   	content: 
     [
       { text: moment(new Date()).format('DD-MM-YYYY'), alignment: 'right' },
-      { text: 'IOM Protokoll Fall Nr. ' + this.casenr, style: 'header' },
+      { text: 'Protokoll Intraoperative Neurophysiologie', style: 'header' },
 
       { text: 'Patientenangaben', style: 'subheader' },
       
+      { text: "Fall Nr.: " + this.casenr, style: 'plaintext'},
       { text: "Vorname: " + this.surname, style: 'plaintext'},
       { text: "Name: " + this.name, style: 'plaintext'},
       { text: "Geburtsdatum: " + this.formBirthdate, style: 'plaintext'},
