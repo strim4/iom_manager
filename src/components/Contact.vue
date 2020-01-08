@@ -35,7 +35,7 @@
                <v-card-title primary-title>
                  <div>
                    <h3 class="headline mb-0"><b>Über den IOM Manager</b></h3>
-                   <div class="my-4 subtitle-1 black--text"> Der IOM-Manager wurde von der Berner Fachhochschule in </br>Zusammenarbeit mit dem Inselspital als Studentenprojekt für die </br>Anwender des intraoperativen Neuromonitorings entwickelt. Er bietet die Funktionen für die intraoperative Protokollierung, in </br> Zusammenarbeit mit dem Klinikserver wird die Datenarchivierung </br>angeboten und es besteht die Möglichkeit Auswertungsskripts für die Datenanalyse hochzuladen. </br></br> Bei der vorliegenden Version handelt es sich um einen Prototyp. </br>Dies bedeutet, dass es  für den IOM Manager keinen laufenden </br>Support gibt. Für Anmerkungen sind die Entwickler jedoch immer </br>offen.</div>
+                   <div class="my-4 subtitle-1 black--text"> Der IOM-Manager wurde von der Berner Fachhochschule in </br>Zusammenarbeit mit dem Inselspital als Studentenprojekt für die </br>Anwender des intraoperativen Neuromonitorings entwickelt. Er bietet die Funktionen für die intraoperative Protokollierung, in </br> Zusammenarbeit mit dem Klinikserver wird die Datenarchivierung </br>angeboten und es besteht die Möglichkeit unterschiedliche Analysen auszuführen. </br></br> Bei der vorliegenden Version handelt es sich um einen Prototyp. </br>Dies bedeutet, dass es  für den IOM Manager keinen laufenden </br>Support gibt. Für Anmerkungen sind die Entwickler jedoch immer </br>offen.</div>
                   </div>                
                 </v-card-title>
               </v-card>

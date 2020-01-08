@@ -64,7 +64,7 @@ export default {
     selectoptions: [ 'Anästhesie','IOM AEP', 'IOM D-Welle',  'IOM EEG','IOM EMG',  'IOM Mapping', 'IOM MEP', 'IOM MEP/Grid',
      'IOM Reflexe', 'IOM SSEP', 'IOM MEP', 'IOM VEP', 'Medikamente', 'OP-Verlauf', 
      'OP Blutdruck/Herzfrequenz', 'OP Dura', 'OP Gefässe', 'OP Komplikationen', 'OP Liquor',
-      'OP Zugabee', 'OP Rücken', 'OP Tumor/Zyste', 'OP Vorbereitung', 'Technik','Weitere'],
+      'OP Zugabe', 'OP Rücken', 'OP Tumor/Zyste', 'OP Vorbereitung', 'Technik','Weitere'],
     selected: [],
     categories: [],
     rules: [

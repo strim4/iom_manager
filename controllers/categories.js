@@ -11,7 +11,7 @@ app.get('/categories', passport.authenticate('jwt', { session: false }), (req, r
     res.send({
     categories,
     });
-    });
+    }).sort( { name: 1 } );
     });
 
 //delete device from the database
