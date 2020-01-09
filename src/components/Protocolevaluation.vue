@@ -2773,7 +2773,7 @@ study: '',
     bcrL:'',
     bcrR:'',
      bcrt: '',
-    bcrComment: '',
+ 
 
   },
   
@@ -3230,10 +3230,10 @@ image: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAA1+E
 			
 				body: [
         
-          [{text:'Reflex', style: 'tableHeader'}, {text:'Links', style: 'tableHeader'}, {text:'Rechts', style: 'tableHeader'}],
-					['BR' , this.baselines.brL, this.baselines.brR, ],
-          ['LAR' , this.baselines.larL, this.baselines.larR, ],
-          ['BCR' , this.baselines.bcrL, this.baselines.bcrR, ],
+          [{text:'Reflex', style: 'tableHeader'}, {text:'Links', style: 'tableHeader'}, {text:'Rechts', style: 'tableHeader'}, {text:'', style: 'tableHeader'},],
+					['BR' , this.baselines.brL, this.baselines.brR, this.baselines.brt, ],
+          ['LAR' , this.baselines.larL, this.baselines.larR, this.baselines.lart,],
+          ['BCR' , this.baselines.bcrL, this.baselines.bcrR, this.baselines.bcrt, ],
           
 
         ],
@@ -3383,10 +3383,10 @@ image: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAA1+E
 			
 				body: [
         
-          [{text:'Reflex', style: 'tableHeader'}, {text:'Links', style: 'tableHeader'}, {text:'Rechts', style: 'tableHeader'}],
-					['BR' , this.closing.brL, this.closing.brR, ],
-          ['LAR' , this.closing.larL, this.closing.larR, ],
-          ['BCR' , this.closing.bcrL, this.closing.bcrR, ],
+          [{text:'Reflex', style: 'tableHeader'}, {text:'Links', style: 'tableHeader'}, {text:'Rechts', style: 'tableHeader'}, {text:'', style: 'tableHeader'}],
+					['BR' , this.closing.brL, this.closing.brR, this.closing.brt,],
+          ['LAR' , this.closing.larL, this.closing.larR, this.closing.lart,],
+          ['BCR' , this.closing.bcrL, this.closing.bcrR, this.closing.bcrt,],
           
 
         ],
