@@ -2791,6 +2791,7 @@ export default {
           event: 'IOM gestartet',
           comment: '',
     }) ;
+    this.deleteOpenCase(this.id); 
 
   },
 
@@ -2931,7 +2932,7 @@ this.dialogEval = true;
               'success',
             );
            
-            this.deleteOpenCase(this.id); 
+          
             this.$router.push({ name: 'Protocolevaluation', params: { casenr: this.casenr }  });
             
           })
